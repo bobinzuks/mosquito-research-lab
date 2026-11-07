@@ -1,5 +1,75 @@
 {
   "schemaVersion": 1,
-  "records": [],
-  "note": "Empty by design. Research claims must be linked to inspected primary sources before being marked reviewed."
+  "records": [
+    {
+      "id": "MOS-001",
+      "topic": "rain",
+      "claim": "Free-flying mosquitoes can survive direct raindrop impacts due partly to low body mass and reduced momentum transfer.",
+      "species": "Anopheles (study specimens)",
+      "source": {
+        "doi": "10.1073/pnas.1205446109",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3382494/"
+      },
+      "method": "High-speed videography and theoretical analysis",
+      "limitations": "Surviving impacts does not establish how mosquitoes predict rain or whether rainfall sounds repel them.",
+      "reviewStatus": "source-inspected",
+      "confidence": "moderate"
+    },
+    {
+      "id": "MOS-002",
+      "topic": "humidity",
+      "claim": "Ir93a-dependent mosquito sensory systems contribute to humidity and temperature detection and host-proximity behavior.",
+      "species": "Anopheles gambiae; Aedes aegypti",
+      "source": {
+        "doi": "10.1016/j.neuron.2022.12.025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10023463/"
+      },
+      "method": "Genetic perturbation, neural calcium imaging and behavior",
+      "limitations": "Receptor disruption is not evidence that artificial electronic signals can mimic humidity.",
+      "reviewStatus": "source-inspected",
+      "confidence": "high"
+    },
+    {
+      "id": "MOS-003",
+      "topic": "electric-fields",
+      "claim": "Insulated-conductor electric-field barriers affected Aedes aegypti passage in controlled experiments.",
+      "species": "Aedes aegypti",
+      "source": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11424001/"
+      },
+      "method": "Controlled barrier experiment",
+      "limitations": "Does not establish neuronal field sensing or safe practical deployment; no construction guidance provided.",
+      "reviewStatus": "source-inspected",
+      "confidence": "moderate"
+    },
+    {
+      "id": "MOS-004",
+      "topic": "sound",
+      "claim": "Male Culex quinquefasciatus mosquitoes use Johnston's organ to detect female-like flight tones.",
+      "species": "Culex quinquefasciatus",
+      "source": {
+        "doi": "10.1098/rsif.2022.0285",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9399701/"
+      },
+      "method": "Physiological modeling with free-flight behavioral assay",
+      "limitations": "Mate localization is not evidence of general audio repellency or electric-field sensitivity.",
+      "reviewStatus": "source-inspected",
+      "confidence": "high"
+    },
+    {
+      "id": "MOS-005",
+      "topic": "wind",
+      "claim": "In field trapping experiments wind-associated reductions in mosquito catches were consistent with dilution of attractant cues rather than simple flight incapacity.",
+      "species": "Aedes vexans; Anopheles walkeri; Coquillettidia perturbans",
+      "source": {
+        "doi": "10.1603/0022-2585-40.5.607",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14596273/"
+      },
+      "method": "CO2-baited field trapping with fan-generated wind",
+      "limitations": "Trapping results do not directly establish bite prevention or all-species generality.",
+      "reviewStatus": "source-inspected",
+      "confidence": "moderate"
+    }
+  ],
+  "note": "Source-inspected means abstract/full text inspected, NOT independently replicated or verified. Claims and limitations must remain together."
 }
