@@ -1,0 +1,13 @@
+{
+  "name": "mosquito-research-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "experiment": "node experiments/synthetic-baseline.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
