@@ -1,0 +1,31 @@
+name: Ruflo Hosted Runner Smoke Test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-ruflo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check runtime
+        run: |
+          node --version
+          npm --version
+      - name: Inspect published Ruflo package
+        run: |
+          npm view ruflo version
+          npm view ruflo dist.tarball
+      - name: Install Ruflo in isolated temp prefix
+        run: |
+          mkdir -p "$RUNNER_TEMP/ruflo-smoke"
+          npm install --prefix "$RUNNER_TEMP/ruflo-smoke" --ignore-scripts --no-audit --no-fund ruflo
+      - name: Inspect CLI without starting agents
+        run: |
+          timeout 45s "$RUNNER_TEMP/ruflo-smoke/node_modules/.bin/ruflo" --help
+      - name: Run project tests
+        run: npm test
