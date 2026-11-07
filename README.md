@@ -1,0 +1,25 @@
+# Mosquito Research Lab
+
+Open-source, evidence-grounded investigation of mosquito sensory biology and a reusable recursive research scientist.
+
+## Two independent tracks
+- `research/mosquito/`: mosquito neuroscience, wind, rain, humidity, vision, acoustics and electrostatic-field literature.
+- `packages/research-scientist/`: domain-neutral hypothesis and evidence evaluation, later Ruflo / RuVector RSI integration.
+
+## Principles
+1. Published observations are not interchangeable with hypotheses.
+2. Every claim has a traceable source and explicit limitations.
+3. Failed hypotheses remain in the ledger.
+4. Recursive strategies are compared with a frozen baseline on held-out questions.
+5. No self-grading or rewriting evaluation results.
+6. No unreviewed high-voltage, radiation, or chemical experiments.
+
+## Run
+Requires Node.js 20+.
+
+```sh
+npm test
+npm run experiment
+```
+
+Current experiment is **synthetic**, not a validated mosquito model or operational RSI system. See `docs/ROADMAP.md`.
