@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "id": "air",
+      "title": "Wind flight",
+      "abstract": "airflow flight stability",
+      "reviewed": true
+    },
+    {
+      "id": "hum",
+      "title": "Humidity sensing",
+      "abstract": "temperature receptors",
+      "reviewed": true
+    },
+    {
+      "id": "elec",
+      "title": "Electrostatic forces",
+      "abstract": "electric field mosquito flight",
+      "reviewed": false
+    }
+  ],
+  "train": [
+    {
+      "terms": [
+        "airflow"
+      ],
+      "expected": "air"
+    },
+    {
+      "terms": [
+        "temperature"
+      ],
+      "expected": "hum"
+    },
+    {
+      "terms": [
+        "electric"
+      ],
+      "expected": "elec"
+    }
+  ],
+  "holdout": [
+    {
+      "terms": [
+        "flight",
+        "airflow"
+      ],
+      "expected": "air"
+    },
+    {
+      "terms": [
+        "humidity",
+        "temperature"
+      ],
+      "expected": "hum"
+    }
+  ]
+}
