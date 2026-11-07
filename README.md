@@ -20,6 +20,8 @@ Requires Node.js 20+.
 ```sh
 npm test
 npm run experiment
+npm run investigate
+npm run benchmark
 ```
 
-Current experiment is **synthetic**, not a validated mosquito model or operational RSI system. See `docs/ROADMAP.md`.
+The investigation command produces evidence review packets for wind and rain. The synthetic benchmark records each training prediction before incorporating its feedback and compares the final strategy against the fixed baseline on separate questions. See [the roadmap](docs/ROADMAP.md) and [the compatibility probe](integrations/ruvector/UPSTREAM.md).

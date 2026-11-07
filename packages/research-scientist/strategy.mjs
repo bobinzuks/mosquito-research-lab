@@ -6,7 +6,7 @@ export const strategies = Object.freeze({
   evidence: {name:'evidence', score:(q,s)=> q.terms.filter(t=>(s.title+' '+s.abstract).toLowerCase().includes(t)).length + (s.reviewed?1:0)}
 });
 export function rank(question, sources, strategy='keyword') {
-  if (!strategies[strategy]) throw Error('Unknown strategy');
+  if (!Object.hasOwn(strategies, strategy)) throw Error('Unknown strategy');
   return [...sources].map(s=>({id:s.id,score:strategies[strategy].score(question,s)})).sort((a,b)=>b.score-a.score || a.id.localeCompare(b.id));
 }
 export function evaluate(dataset,strategy) {

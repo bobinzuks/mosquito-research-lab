@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "experiment": "node experiments/synthetic-baseline.mjs"
+    "experiment": "node experiments/synthetic-baseline.mjs",
+    "investigate": "node research/mosquito/run-investigations.mjs",
+    "benchmark": "node experiments/recursive-benchmark.mjs"
   },
   "engines": {
     "node": ">=20"

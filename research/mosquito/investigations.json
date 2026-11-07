@@ -1,0 +1,62 @@
+[
+  {
+    "question": {
+      "id": "Q-WIND-1",
+      "text": "What mechanism explains the decline in CO2-baited field trap catches under wind?"
+    },
+    "hypotheses": [
+      {
+        "id": "H-WIND-1",
+        "prediction": "At matched airspeed, restoring the CO2 plume increases oriented approaches.",
+        "links": [
+          {
+            "evidenceId": "MOS-005",
+            "relation": "supports",
+            "rationale": "The reported catch pattern was consistent with dilution of attractant cues."
+          }
+        ]
+      },
+      {
+        "id": "H-WIND-2",
+        "prediction": "At matched CO2 plume conditions, increasing airspeed reduces successful approaches through direct flight limitation.",
+        "links": [
+          {
+            "evidenceId": "MOS-005",
+            "relation": "challenges",
+            "rationale": "The catch pattern favored cue dilution over simple flight incapacity in this assay. Trap counts alone do not isolate flight mechanics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question": {
+      "id": "Q-RAIN-1",
+      "text": "Does a cue before droplet contact trigger a change in flight behavior?"
+    },
+    "hypotheses": [
+      {
+        "id": "H-RAIN-1",
+        "prediction": "Flight behavior changes at droplet contact, with no measurable pre-contact response to an isolated cue in the same assay.",
+        "links": [
+          {
+            "evidenceId": "MOS-001",
+            "relation": "context",
+            "rationale": "The study measured impacts and subsequent flight. It did not compare pre-contact behavior with and without an isolated cue."
+          }
+        ]
+      },
+      {
+        "id": "H-RAIN-2",
+        "prediction": "An isolated pre-impact cue changes mosquito behavior before contact with droplets.",
+        "links": [
+          {
+            "evidenceId": "MOS-001",
+            "relation": "context",
+            "rationale": "The impact study provides physical context for rainfall but does not test isolated anticipatory cues."
+          }
+        ]
+      }
+    ]
+  }
+]

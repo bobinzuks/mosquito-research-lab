@@ -9,13 +9,13 @@
 ## Phase 1 — Reproducible research
 - [ ] Import a small, legally accessible mosquito sensory dataset
 - [ ] Reproduce a published result without fitting to the evaluation split
-- [ ] Implement domain-neutral question -> hypothesis -> evidence -> critique loop
+- [x] Implement a domain-neutral investigation report for hypotheses, evidence and review gaps
 - [ ] Record provenance and contradictory evidence
 
 ## Phase 2 — Recursive learning
-- [ ] Evaluate Ruflo and RuVector RSI interfaces against actual documentation
+- [x] Verify Ruflo MCP discovery, RuVector retrieval, SONA pattern learning and Darwin package loading in the cloud
 - [ ] Add optional adapters, pinned versions and resource budgets
-- [ ] Compare fixed vs evolving strategies on unseen research questions
+- [ ] Evaluate evolving strategies on independently curated research questions. The synthetic feedback benchmark is available.
 - [ ] Require independent review before promoting a new strategy
 
 ## Phase 3 — Public research

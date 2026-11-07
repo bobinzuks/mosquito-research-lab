@@ -1,6 +1,6 @@
 # RuVector / Ruflo integration contract
 
-Status: **not integrated**. This directory deliberately contains no guessed APIs.
+Runtime probes are available in [the compatibility notes](UPSTREAM.md). The research engine has no provider adapter yet.
 
 A future adapter must support:
 - `recordEvidence({claimId,sourceId,reviewStatus,provenance})`
